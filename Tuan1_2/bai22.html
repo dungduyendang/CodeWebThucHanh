@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <title>Document</title>
+    <style>
+       body {
+            overflow-x: hidden;
+        }
+        .box_hai {
+            position: absolute;
+            display: inline-block;
+            background-color: #C0C0C0;
+            margin-right: 10px;
+            top:-30px;
+            left: 300px;
+            width: 77%;
+            height: 222px;
+        }
+        .img_mc{
+            position: relative;
+            top:-30px;
+            left: -8px;
+            width: 300px;
+            height: 200px; 
+            margin: 14.2px 0px;
+        }
+        #view{
+            position: relative;
+            top:-230px;
+            left: 330px;
+            display: flex;
+            box-shadow: 10px 10px 5px #A9A9A9;
+            margin-right: 295px;
+            height: 25px;
+            overflow: hidden;
+            width: 300px;
+            padding: 5px 5px;
+            background-color: #D3D3D3;
+        }
+        .tieude{
+            flex-basis: 50%;
+        }
+        #text{
+            position: relative;
+            top: -263px;
+            left: 70%;
+            display:flex;
+        }
+        #text_input{
+            width: 20%;
+            height: 25px;
+        }
+        .fas{
+            position: relative;
+            left: 9px;
+            top: 7px;
+        }
+        #go{
+            width: 13%;
+            height: 25px;
+            background-color: #696969;
+            color: aliceblue;
+            border-radius: 4px;
+            box-shadow: 5px 5px 5px #A9A9A9;
+            cursor: pointer;
+        }
+        #down{
+            background-color: #F8F8FF;
+            position: relative;
+            left: -31px;
+            width: 30px;
+            height: 28px;
+            border-radius: 4px;
+            top: 1px;
+            cursor: pointer;
+        }
+        .view_hai{
+            display: flex;
+            top: -190px;
+            position: relative;
+            left: 400px;
+        }
+        .tieude_hai{
+            position: relative;
+            flex-basis: 15%;
+            color: #555;
+            font-weight: 500px;
+        }
+        .tieudehai_modified::before{
+            content: "";
+            display: block;
+            position: absolute;
+            position: relative;
+            border-left: 1px solid #FFFAF0;
+            height: 20px;
+            top:17px;          
+            left: 150px;
+        }
+        .tieudehai_modified-them{
+            top:-18px;
+        }
+        .div_xuong{
+            position: relative;
+            background-color: #C0C0C0;
+            width: 300px;
+            top: -166px;
+            height: 600px;
+            left: -8px;
+        }
+        .technical{
+            background-color: 	#708090;
+            top: 40px;
+            margin: 1px 0;
+            position: relative;
+            padding: 1px;
+            margin-right: -13px;
+            padding-right: 0px;
+            box-shadow: 0px 8px 10px -5px rgba(0, 0, 0, 0.7), 0px -3px 5px -4px rgba(0, 0, 0, 0.7);
+            height: 70px;
+        }
+        .technical::after{
+            content: "";
+            border-top: 14px solid rgba(0, 0, 0, 0.3);
+            border-right: 13.5px solid transparent;
+            position: absolute;
+            right: 0px;
+            top: 72px;
+        }
+        .bydate{
+            text-decoration: none;
+            font-size:20px;
+            font-weight:500;
+            color:	#556B2F;
+        }
+        .date{
+            position: relative;
+            top: 40px;
+            left: 90px;
+            list-style: none;
+        }
+        .hr{
+            position: relative;
+            left: -120px;
+            width: 80px;
+        }
+        .technical_hai{
+            position: relative;
+            top:200px;
+            background-color: 	#708090;
+            margin: 1px 0;
+            height: 68px;
+            padding: 1px;
+            margin-right: -13px;
+            padding-right: 0px;
+            box-shadow: 0px 8px 10px -5px rgba(0, 0, 0, 0.7), 0px -3px 5px -4px rgba(0, 0, 0, 0.7);
+        }
+        .technical_hai::after{
+            content: "";
+            border-top: 14px solid rgba(0, 0, 0, 0.3);
+            border-right: 13.5px solid transparent;
+            position: absolute;
+            right: 0px;
+            top: 70px;
+        }
+        .hr_hai{
+            position: relative;
+            left: -110px;
+            width: 100px;
+        }
+        .date_hai{
+            position: relative;
+            top: 40px;
+            left: 90px;
+            list-style: none;
+        }
+
+        #ulskip{
+            position: relative;
+            top:70px;
+            list-style: none;
+            left: -90px;
+        }
+        #skip_chu{
+            text-decoration: none;
+            font-weight: 300;
+            color: #708090;
+        }
+        .far{
+            color: #708090;
+            margin: 0 6px;
+        }
+        #math{
+            position: relative;
+            bottom: 720px;
+            left: 400px;
+            background:#C6E2FF;
+            padding: 50px;
+            margin: 0 0px;
+            width: 30%;
+        }
+        #math_chu{
+            text-decoration: none;
+            color: cadetblue;
+            color: #696969;
+            font-weight: 800;
+            position:absolute;
+            top:57px;
+            left: 49px;
+        }
+        #math_chu-june{
+            text-decoration: none;   
+            position: relative;
+            top:30px;
+            left: -1px;
+            color: cadetblue;
+        }
+        #math_chu-june::before{
+            content: "";
+            display: block;
+            position: absolute;
+            position: relative;
+            border-left: 1px solid #FFFAF0;
+            height: 20px;
+            left: 90px;
+            top: 20px;
+        }
+        #math_chu-june-hai{
+            text-decoration: none;   
+            position: relative;
+            top:30px;
+            left: 9px;
+            color: cadetblue;
+        }
+        .fas{
+            position: relative;
+            left: -20px;
+        }
+        .today{
+            position: absolute;
+            top: 158px;
+            height: 397px;
+            width: 100%;
+            left: 0px;
+            background-color: #F8F8FF;
+        }
+        #content{
+            margin: 14px 30px;
+        }
+        .right{
+            position: absolute;
+            left: 486px;
+            width: 60%;
+            height: 553px;
+            top: 0px;
+        }
+        .duoi_right{
+            background-color: #F8F8FF;
+            height: 45px;
+            position: absolute;
+            width: 97%;
+            top: 316px;
+        }
+        #w3cblog{
+            display: flex;
+            justify-content: center;
+            position: relative;
+            top: 11px;
+        }
+        .footer{
+            background-color: white;
+            display: block;
+            position: absolute;
+            bottom: 0px;
+            width: 97%;
+            height: 192px;
+        }
+        #word{
+            margin: 25px 10px;
+        }
+        #footer_word{
+            margin: 40px 10px;
+        }
+        .container{
+            height: fit-content;
+            height: 777px;
+        }
+    </style>
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="container">
+                <div class="box_mot">
+                    <img class="img_mc" src="https://cdn2.iconfinder.com/data/icons/social-flat-buttons-3/512/w3cw3-512.png" jsaction="load:XAeZkd;" jsname="HiaYvf" alt="W3, w3c, consortium, web, wide, world icon - Free download" data-noaft="1">
+                </div>
+                <div class="box_hai">
+                </div>
+              <div id="view">
+                <span class="tieude">Views:</span>
+                <span class="tieude"><u>Desktop</u></span>
+                <span class="tieude">Mobile</span>
+                <span class="tieude">Print</span>  
+            </div>   
+            <div id="text">
+                <input type="text" name="" value="W3C By Region" id="text_input">
+                <div id="down">
+                    <i class="fas fa-caret-down"></i>
+                </div>
+                <div class="go">
+                    <input type="text" name="" id="go" value="Go" readonly>
+                </div>
+            </div>
+            <div class="view_hai">
+                <span class="tieude_hai tieudehai_modified tieudehai_modified-them">STANDARDS</span>
+                <span class="tieude_hai tieudehai_modified tieudehai_modified-them">PARTICIPATE</span>
+                <span class="tieude_hai tieudehai_modified tieudehai_modified-them">MEMBERSHIP</span>
+                <span class="tieude_hai">ABOUT W3C</span>
+                <ul id="ulskip">
+                    <li id="skip">
+                        <i class="far fa-arrow-alt-circle-left"></i>
+                        <a href="" id="skip_chu">Skip</a>
+                        <i class="far fa-arrow-alt-circle-right"></i>
+                    </li>
+                </ul>
+            </div>
+            <div class="div_xuong">
+               <div class="technical">
+                <h2>TECHNICAL REPORTS</h2>
+                <li class="date">
+                    <a href="" class="bydate">By Date</a>
+                    <hr class="hr">
+                </li>
+                <li class="date">
+                    <a href="" class="bydate">By Group</a>
+                    <hr class="hr">
+                </li>
+               </div>
+               <div class="technical_hai">
+                <h2>WEB AND INDUSTRY</h2>
+                <li class="date_hai">
+                    <a href="" class="bydate">Automotive</a>
+                    <hr class="hr_hai">
+                </li>
+                <li class="date_hai">
+                    <a href="" class="bydate">Publising</a>
+                    <hr class="hr_hai">
+                </li>
+                <li class="date_hai">
+                    <a href="" class="bydate">Handing</a>
+                    <hr class="hr_hai">
+                </li>
+                <li class="date_hai">
+                    <a href="" class="bydate">Automatic</a>
+                    <hr class="hr_hai">
+                </li>
+                <li class="date_hai">
+                    <a href="" class="bydate">Clear</a>
+                    <hr class="hr_hai">
+                </li>
+               </div>   
+            </div>
+            <div id="math">
+                <i class="fas fa-caret-down"></i> 
+                <a href="" id="math_chu">MathMK 3.0 Becomes ISO/IEC International Standard</a>
+                <a href="" id="math_chu-june">23 June 2015</a>
+                <a id="math_chu-june-hai">Archive</a>
+                <div class="today">
+                    <p id="content"><a href="https://getbootstrap.com/" target="_blank">Bootstrap</a> cho phép quá trình thiết kế website diễn ra nhanh chóng và dễ dàng hơn dựa trên những thành tố cơ bản sẵn có như typography, forms, buttons, tables, grids, navigation, image carousels… Cùng Mắt Bão tìm hiểu tính năng và lợi ích mang lại cho lập trình viên của Bootstrap là gì nhé!
+                        Bootstrap là một bộ sưu tập miễn phí của các mã nguồn mở và công cụ dùng để tạo ra một mẫu webiste hoàn chỉnh. Với các thuộc tính về giao diện được quy định sẵn như kích thước, màu sắc, độ cao, độ rộng…, các designer có thể sáng tạo nhiều sản phẩm mới mẻ nhưng vẫn tiết kiệm thời gian khi làm việc với framework này trong quá trình thiết kế giao diện website.
+                        Đến ngày 31/1/2012, Bootstrap phiên bản 2 đã được phát hành. Bootstrap 2 được bổ sung bố cục lưới 12 cột với thiết kế tùy chỉnh đáp ứng cho nhiều màn hình kích thước. Tiếp nối sự thành công của phiên bản 2, Bootstrap 3 ra đời vào ngày 19/8/2013 với giao diện tương thích với smartphone.
+
+                        Chỉ 3 năm sau ngày ra mắt, Bootstrap đã trở thành No.1 project trên GitHub.</p>
+                </div>
+                <div class="right">
+                    <p id="word">Vào năm 1975, công ty phần mềm máy tính nhỏ Micro-Soft được thành lập bởi Bill Gates và Paul Allen tại Albuquerque, New Mexico. Vào thời điểm đó, văn bản được tạo ra bởi máy đánh chữ, cao cấp nhất là máy đánh chữ điện tử. Với thiết bị này, chỉ với một lỗi đánh máy sai sẽ khiến toàn bộ trang giấy bị hủy bỏ và phải đánh lại từ đầu.
+
+                        Chính vì vậy, Bill Gates và Paul Allen đã nghĩ tới các hệ thống máy tính cá nhân có khả năng xử lý văn bản và bắt đầu tìm kiếm những lập trình viên giỏi.</p>
+                    <div class="duoi_right">
+                        <span id="w3cblog">W3C BLOG</span>
+                    </div>
+                    <div class="footer">
+                        <p id="footer_word">Vào ngày 20/11/1985, phiên bản đầu tiên của dòng Microsoft Windows là Windows 1.0 được phát hành.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </header>
+</div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .radio-button{
+            display: flex;
+            flex-direction: column;
+        }
+        .radio-button label{
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Travel reservation</h1>
+    <p>* denotes mandotory</p>
+
+    <p>Full Name*:</p>
+    <input type="text" name="" id="name" placeholder="LastName FirsetName" maxlength="20">
+    <p>Email address*:</p>
+    <input type="text" name="" id="email" placeholder="E-mail" maxlength="20">
+    <p>Select TourPacket</p>
+    <select id="example-select" name="example-select">
+        <option value="option1">Google</option>
+        <option value="option2">Youtube</option>
+        <option value="option3">Facebook</option>
+      </select>
+      <p>Arrive Date*:</p>
+      <input type="date" name="" id="">
+      <p>Number of Person*:</p>
+      <input type="text" name="" id="">
+      <p>What would you like Alibaba</p>
+      <div class="radio-button">
+        <label for="">
+            Boarding <input type="radio" name="">
+        </label>
+        <label for="">
+            Foodding <input type="radio" name="">
+        </label>
+        <label for="">
+            Sight seing <input type="radio" name="">
+        </label>
+      </div>
+      <p>Discount Code:</p>
+     <input type="text" name="" id="code">
+     <p>Term*</p>
+     <input type="radio" name="" id="term"> I agree
+     <input type="radio" name="" id="term"> I disagree <br>
+     <input type="submit" value="Complete">
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+             background-color:aqua /* tên của màu xanh da trời */
+        }
+        #survery{
+            position: relative;
+            left: 40%;
+        }
+        .month-div{
+            position: relative;
+            top:-34px;
+            left:60px;
+        }
+        #dated{
+            position: relative;
+            top:-68px;
+            left:140px;
+        }
+        #date{
+            position: relative;
+            top:-102px;
+            left: 180px;
+        }
+        #year{
+            position: relative;
+            top:-137px;
+            left: 220px;
+        }
+        #inputyear{
+            position: relative;
+            top:-170px;
+            left: 265px;
+            width: 40px;
+            height: 13px;
+        }
+        #address{
+            position: relative;
+            top:-160px;
+        }
+        #inputaddress{
+            position: relative;
+            top:-150px;
+            width: 30%;
+            height: 50px;
+        }
+        #email{
+            position: relative;
+            top:-140px;
+        }
+        #inputemail{
+            position: relative;
+            top:-130px;
+        }
+        #view{
+            position: relative;
+            top:-120px;
+        }
+        .radio-class{
+            position: relative;
+            top:-110px;
+        }
+        #sau{
+            position: relative;
+            top:-100px;
+        }
+        .checkbox{
+            display: flex;
+            top:-90px;
+            position: relative;
+        }
+        .checkbox-class {
+        position: relative;
+        display: inline-block;
+        margin-right: 10px;
+        vertical-align: top;
+        top:-80px;
+        }
+        .checkbox-class label {
+        display: block;
+        margin-bottom: 5px;
+        }
+        #other{
+            position: relative;
+            top:-22px;
+            left: 68px;
+            height: 10px;
+        }
+        #bay{
+            width: 60%;
+            height: 130px;
+        }
+        .submit-end{
+            position: relative;
+            top:100px;
+            left: -120px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="survery">Survery Form</h1>
+    <p>We use cookies to make sure that our website works properly, as well as some ‘optional’ cookies to personalise content and advertising,
+        provide social media features and analyse how people use our site. By accepting some or all optional cookies 
+        you give consent to the processing of your personal data, including transfer to third parties, some in 
+        countries outside of the European Economic Area that do not offer the same data protection standards as
+        the country where you live. You can decide which optional cookies to accept by clicking on ‘Manage Settings’,
+        where you can also find more information about how your personal data is processed. Further information 
+        can be found in our privacy policy.</p>
+        <ol type="1">
+            <li>What is your name?</li>
+            <input type="text" name="" placeholder="ManhDung">
+            <br> <br>
+            <li>What is your date of birth?</li>
+            <p>Month:</p>
+            <div class="month-div">
+                <label for="">
+                    <select id="month" name="example-select">
+                        <option value="option1">January</option>
+                        <option value="option2">July</option>
+                        <option value="option3">October</option>
+                      </select>
+                </label>
+            </div>
+              <p id="dated">Date:</p>
+              <select id="date" name="example-select">
+                <option value="option1">1</option>
+                <option value="option2">2</option>
+                <option value="option3">3</option>
+              </select>
+              <p id="year">Year:</p> <input type="text" name="" id="inputyear">
+                    <li id="address">What is your mailing address</li>
+                    <input type="text" name="" id="inputaddress">
+
+              <li id="email">What is your mail address?</li>
+              <input type="email" name="" id="inputemail">
+              <li id="view">Have you viewed our online product</li>
+              <input type="radio" name="radio" id="mot" checked value="1" class="radio-class">
+              <input type="radio" name="radio" id="mot" value="2" class="radio-class">
+              <li id="sau">If so,what product beside the one you are ordering might you be interestedin purching in the future</li>
+              <div class="checkbox-class">
+              <Label><input type="checkbox">VCR</Label>  
+              <Label><input type="checkbox">Big Screen TV</Label>  
+              <Label><input type="checkbox">Audio Requiment</Label>  
+              <Label><input type="checkbox">Video Requiment</Label>  
+              <Label><input type="checkbox">Other</Label>  
+              <input type="text" name="" id="other">
+              <li>Do you have any question comments or suggetions before proceesing to the other Form?</li>
+              <input type="text" name="" id="bay">
+              <input type="submit" value="Send form" class="submit-end">
+              <input type="submit" value="Clear form" class="submit-end">
+              </div>
+        </ol>
+        
+</body>
+</html>
