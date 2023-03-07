@@ -1,3 +1,4 @@
+
 #menu-container {
     display: flex;
     justify-content: space-around;
@@ -45,6 +46,11 @@
 #text{
     position: relative;
     left: 206px;
-    top: -299px;
-    
+    top: -299px;   
+}
+.container-button{
+    position: relative;
+    top: -101px;
+    display: flex;
+    justify-content: flex-start;
 }
