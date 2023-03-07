@@ -7,6 +7,129 @@
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
     <title>Phan Manh Dung</title>
+    <style>
+        #menu-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+#left {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    color: #444;
+    font-weight: 400;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#right {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+.textcart{
+    width: 150px;
+    height: 28px;
+    background-color: #F5F5F5;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    border-radius: 2px;
+    border: 1px solid black;
+}
+#right{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.banner{
+    width: 100%;
+}
+#text{
+    position: relative;
+    left: 206px;
+    top: -299px;   
+}
+.container-button{
+    position: relative;
+    top: -101px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.button-product{
+    width: 140px;
+    height: 40px;
+    background-color: #228B22;
+    border-radius: 3px;
+    margin-left: 30px;
+}
+.button-face{
+    width: 110px;
+    height: 40px;
+    margin-left: 30px;
+    background-color: white;
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+}
+.button-body{
+    width: 110px;
+    height: 40px;
+    border-radius: 3px;
+    background-color: white;
+    margin-left: 30px;
+    border: none;
+}
+.search__product{
+    display: flex;
+    align-items: center;
+    left: 390px;
+    position: relative;
+    border-bottom: 0.5px solid;
+    width: 156px;
+    text-align: center;
+    justify-content: center;
+    color: rgba(0, 0, 0, 0.3);
+    font-weight: 500;
+}
+.img-search_product{
+    position: relative;
+    left: 248px;
+    top: 12px;
+    color: rgba(0, 0, 0, 0.2);
+}
+.sortby{
+    border-radius: 3px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    left: 400px;
+    width: 101px;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.08);
+    color: rgba(0, 0, 0, 0.9);;
+}
+
+.icon-sort{
+    position: relative;
+    left: 377px;
+    top: 12px;
+}
+
+.container__product-list-img{
+    position: relative;
+    left: 31px;
+    top:-50px;
+}
+    </style>
 </head>
 <body>
     <div id="wrapper">
@@ -38,13 +161,21 @@
         </div>
         <div class="containre-product">
             <div class="container-button">
-                <button class="button">All Product</button>
-                <button class="button">Face</button>
-                <button class="button">Body</button>
+                <button class="button-product">All Product</button>
+                <button class="button-face">Face</button>
+                <button class="button-body">Body</button>
+                <span class="search__product">Search product</span>
+                <i class="fas fa-search img-search_product"></i>
+                <span class="sortby">Sort by</span>
+                <i class="fas fa-list-ul icon-sort"></i>
             </div>
     </div>
+    <div class="container__product-list">
+        <div class="img-product">
+            <img src="./assets/image/Image 1 (1).png" class="container__product-list-img">
 
-
+        </div>
+    </div>
 </body>
 
 </html>
