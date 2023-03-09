@@ -10,6 +10,7 @@
     <style>
         body{
             overflow-x: hidden;
+            height: 0px;
         }
 #menu-container {
     display: flex;
@@ -296,18 +297,24 @@
     color: white;
 }
 .subscribe{
-    background: red;
+    background: #222;
     height: 40px;
     width: 94%;
-    border-radius: 2px;
+    border-radius: 4px;
     position: relative;
     left: 103px;
     top: 119px;
+    border: 1px solid white;
 }
 #sub{
     position: relative;
-    right: -258px;
-    height: 40px;
+    right: -255px;
+    height: 44px;
+    top:-2px;
+    background-color: #228B22;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border: 1px solid #222;
 }
 .social-content__mot{
     position: relative;
@@ -319,8 +326,25 @@
     left: 102px;
     top: 160px;
 }
+.privacy-ba{
+    display: flex;
+    position: relative;
+    top: 124px;
+    right: -177px;
+    justify-content: space-around;
+    color: white;
+}
 .haikhong{
-
+    color: white;
+}
+#social-content__mot-recevie{
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+#social-content__mot-duis{
+    color: white;
+    font-size: 1rem;
 }
     </style>
 </head>
@@ -550,8 +574,8 @@
         </div>
         <div class="social">
             <div class="social-content__mot">
-                <p>Recevie new promotions</p>
-                <p>Duis ea tempor commode amet reprehende</p>
+                <p id="social-content__mot-recevie">Recevie new promotions</p>
+                <p id="social-content__mot-duis">Duis ea tempor commode amet reprehende</p>
             </div>
             <div class="subscribe">
                 <button id="sub">Subscribe</button>
@@ -562,7 +586,13 @@
                 <img src="./assets/image/YouTube 1.png" alt="">
                 <img src="./assets/image/LinkedIn 1.png" alt="">
                 <p class="haikhong">2022 Brand,Inc</p>
-
+            </div>
+            <div class="privacy">
+                <ul class="privacy-ba">
+                    <li>Privacy</li>
+                    <li>Terms</li>
+                    <li>Sitemap</li>
+                </ul>
             </div>
         </div>
     </div>
