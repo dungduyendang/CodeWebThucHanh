@@ -1,0 +1,77 @@
+/* Khung */
+.center{
+    width: 910px;
+}
+.left{
+    width: 440px;
+}
+.app{
+    display: flex;
+}
+
+/* Center */
+.center__title{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 24px;
+}
+.center__title-datespan{
+    display: flex;
+    margin: 0 26px;
+    margin-top: -8px;
+}
+#date{
+    height: 20%;
+    position: relative;
+    top: 18px;
+    margin: 0 26px;
+    /* border-top: none;
+    border-left: none;
+    border-bottom: none;
+    border-right: solid 1px #999; */
+    border: none;
+    margin-top: 2px;
+}
+#date::after{
+    content: "";
+    width: 1px;
+    height: 11px;
+    margin-left: 20px;
+    margin-top: 1px;
+    background-color: #999;
+}
+/* center pig */
+.center-image-pig{
+    width: 715px;
+    height: 400px;
+    margin-left: 24px;
+    margin-top: -56px;
+}
+
+.center-image-title{
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin-left: 56px;
+    position: relative;
+    top: 20px;
+    align-items: center;
+}
+
+.center-image-title-mic-png{
+    width: 80%;
+}
+
+.center-image-title-word-benjamin{
+
+}
+
+.center-image-bottom-png{
+    width: 32%;
+}
+
+.center-image-bottom{
+    margin-left: 24px;
+    margin-top: 18px;
+}
